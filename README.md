@@ -1,95 +1,59 @@
-# 「AIエディタCursor完全ガイド」 サポートリポジトリ
+# 「AI 에디터 Cursor 완전 가이드」 지원 저장소
 
-## 🌟🌟[「AIエディタCursor完全ガイド」出版＋重版＆創業30周年記念Tシャツプレゼント・キャンペーン](https://www.key-planning.co.jp/30th_anniversary_tshirt/ )を開始しました。ぜひご応募ください！🌟🌟
+## 📕 저장소에 관해
 
-## 📕 このGitHubリポジトリについて
+이 저장소는 「AI 에디터 Cursor 완전 가이드」 학습을 지원하기 위한 저장소이며, 다음 내용을 포함하고 있습니다.
 
-書籍「AIエディタCursor完全ガイド」 について下記のサポートを行うリポジトリです。
+- 이 책에 게재되어 있는 핸즈온 코드, 생성된 샘플 코드, 프롬프트, 스크린샷 이미지 등을 공개합니다(일부 이미지 등은 포함되어 있지 않을 수 있습니다).
+- 원고를 탈고한 후 Cursor 업데이트에 의한 변경점에 관해 보충 설명합니다.
+- 책의 실습 화면, 설명이 본인의 환경과 일치하지 않거나 설명과 동일한 순서로 수행할 수 없는 경우 등에는 이 저장소의 해당 장을 참조하기 바랍니다.
 
-- 書籍に掲載されているハンズオン用コード、生成されたサンプルコード、プロンプト、スクリーンショット画像の公開。
-- 原稿を書き上げた後の Cursor のアップデートによる変更点の補足説明。
-- **書籍を読んでいて、画面と説明が一致しない、説明と同じ手順を行うことができない、といったケースでは、このリポジトリの該当章をご覧ください。**
+[![AI 에디터 Cursor 완전 가이드](images/cover_cursor_boook.jpg)]()
 
-まだお持ちでない方は、ぜひお買い求めください！
+## 📕 저장소의 구성
 
-[![AIエディタCursor完全ガイド](images/cover_cursor_boook.jpg)](https://amzn.to/4c2tjdt)
+이 저장소는 각 장별 실습용 코드, 샘플 코드, 프롬프트를 구분해서 담고 있습니다. 각 장의 링크에서 해당 장으로 이동한 뒤 내용을 참고하기 바랍니다.
 
-## 🌟 アップデート情報 🌟
+### 📘 1장 Cursor 도입
 
-| 日付       | 更新内容                                                                                                                                                                                                                                                   |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2024/09/04 | 書籍発売日に備えた初版リリース。                                                                                                                                                                                                                           |
-| 2024/09/05 | 「第6章 Cursor開発テクニック」 Composer Projects の説明を追加。                                                                                                                                                                                            |
-| 2024/09/06 | 「第4章 Cursorのカスタマイズ設定」 Composer、Chat の設定事項を追記。「第3章 Cursorの機能説明」 参照情報の表示変更の説明を追加。正誤表更新。                                                                                                                |
-| 2024/09/08 | チャットモードのプルダウンが表示されない場合についての対策と説明を追記。                                                                                                                                                                                   |
-| 2024/09/09 | 「第5章 プロンプト・プログラミング実践例」掲載データを追加。                                                                                                                                                                                               |
-| 2024/09/10 | 「Debug with AI」が日本語で回答するようになった点の反映。                                                                                                                                                                                                  |
-| 2024/09/12 | 第2章、第3章のスクリーンショット画像を掲載。                                                                                                                                                                                                               |
-| 2024/09/13 | 第4章、第5章、第6章のスクリーンショット画像を掲載。                                                                                                                                                                                                        |
-| 2024/09/21 | 追補 Composer の内容を [0.41](https://changelog.cursor.com/?nightly=true#041---cursor-tab-python-auto-import-composer-improvements-remote-ssh-to-mac-support) に対応。AI 内ペイン表示、コントロールパネルのウィンドウ化、0.41 その他の変更点の説明を追記。 |
-| 2024/09/22 | 第4章に Cursor Tab の設定説明を追記。Composer 設定説明のアップデート。                                                                                                                                                                                     |
-| 2024/09/25 | o1-mini の利用上限についての記載を追加（第1章、本ページ）。                                                                                                                                                                                                |
-| 2024/10/11 | [0.42](https://changelog.cursor.com/?nightly=true#042---composer-history-lint-errors-vs-code-1931) に対応。                                                                                                                                                |
-| 2024/10/13 | 0.42 での Composer 設定の変更に対応。                                                                                                                                                                                                                      |
-| 2024/10/17 | 0.42.3 対応（Composer のコンテキスト外ファイルへの適用設定）。料金表の掲載。                                                                                                                                                                               |
-| 2024/10/19 | 「AIエディタCursor完全ガイド」出版＋重版＆創業30周年記念Tシャツプレゼント・キャンペーン情報の掲載。                                                                                                                                                        |
-| 2024/10/23 | 高速プレミアムモデルのリストに「claude-3-5-sonnet-20241022」を追加。                                                                                                                                                                                       |
-| 2024/10/29 | 第3章にチャットからのファイル作成が可能になった点を追記。                                                                                                                                                                                                  |
-| 2024/12/02 | [0.43](https://changelog.cursor.com/?nightly=true#043---new-composer-ui-agent-commit-messages) に対応。書籍のInterpreter Modeを用いた手順はComposerのagentをお使いください。                                                                               |
+[🔗 보충 설명](chapter1/README.md)
 
+### 📘 2장 Cursor 기본 조작
 
-## 📕 このリポジトリの構成
+[🔗 스크린샷](chapter2/SCREENSHOT.md)
 
-各章のハンズオン用コード、サンプルコード、プロンプトなどは章ごとにまとめてあります。各章のリンクから該当章に移動して、内容をご覧ください。
+[🔗 프롬프트](chapter2/PROMPT.md)
 
-### 📘 第1章 Cursor の導入
+[🔗 「`.cursor-tutor`」 저장소](https://github.com/kinopeee/cursor-tutor/)
 
-[🔗 補足説明](chapter1/README.md)
+- `.cursor-tutor` 저장소는 Cursor 버전 0.40 이후에는 기본 제공하지 않습니다.
+- 위 「cursor-tutor」 저장소를 다운로드 해 사용하기 바랍니다.
 
-### 📘 第2章 Cursor の基本操作
+### 📘 3장 Cursor 기본 조작
 
-[🔗 スクリーンショット](chapter2/SCREENSHOT.md)
+[🔗 스크린샷](chapter3/SCREENSHOT.md)
 
-[🔗 プロンプト](chapter2/PROMPT.md)
+[🔗 보충 설명](chapter3/README.md)
 
-[🔗 「cursor-tutor」リポジトリ](https://github.com/kinopeee/cursor-tutor/)
+### 📘 4장 Cursor 커스터마이즈 설정
 
-- 2024年6月以前に Cursor をインストールされた方は、書籍の手順通りで操作を進めていただくことができます。
-- ローカルに「.cursor-tutor」フォルダがない場合は、「cursor-tutor」リポジトリをダウンロードしてご利用ください。
+[🔗 스크린샷](chapter4/SCREENSHOT.md)
 
-### 📘 第3章 Cursor の基本操作
+[🔗 보충 설명](chapter4/README.md)
 
-[🔗 スクリーンショット](chapter3/SCREENSHOT.md)
+### 📘 5장 프롬프트 프로그래밍 실천편
 
-[🔗 補足説明](chapter3/README.md)
+[🔗 스크린샷 5.1〜5.10](chapter5/SCREENSHOT1.md)   
+[🔗 스크린샷 5.11〜5.14](chapter5/SCREENSHOT2.md)  
+[🔗 스크린샷 5.15〜5.16](chapter5/SCREENSHOT3.md)
 
-### 📘 第4章 Cursorのカスタマイズ設定
+[🔗 보충 설명/샘플 코드](chapter5/README.md)
 
-[🔗 スクリーンショット](chapter4/SCREENSHOT.md)
+[🔗 프롬프트](chapter5/PROMPT.md)
 
-[🔗 補足説明](chapter4/README.md)
+### 📘 6장 Cursor 개발 기법
 
-### 📘 第5章 プロンプト・プログラミング実践例
+[🔗 스크린샷](chapter6/SCREENSHOT.md)
 
-スクリーンショット  
-[🔗 5.1〜5.10](chapter5/SCREENSHOT1.md)   
-[🔗 5.11〜5.14](chapter5/SCREENSHOT2.md)  
-[🔗 5.15〜5.16](chapter5/SCREENSHOT3.md)
+[🔗 보충 설명](chapter6/README.md)
 
-[🔗 補足説明 / サンプルコード](chapter5/README.md)
-
-[🔗 プロンプト](chapter5/PROMPT.md)
-
-### 📘 第6章 Cursor開発テクニック
-
-[🔗 スクリーンショット](chapter6/SCREENSHOT.md)
-
-[🔗 補足説明](chapter6/README.md)
-
-## 📕 誤植などのお知らせ
-
-こちらの[正誤表](errata.md)を随時更新します。
-
-## 📕 エラー等を見つけた際は
-
-本リポジトリの [Issues](https://github.com/kinopeee/cursor-perfect-guide/issues) にご報告ください。ベストエフォートで対応いたします。

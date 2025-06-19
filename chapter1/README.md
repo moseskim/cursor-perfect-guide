@@ -1,20 +1,21 @@
-# 📕 第1章 Cursor の導入
+# 📕 1장 Cursor 도입
 
-## 📗 Cursor の概要（P2）
+## 📗 Cursor 개요
 
-本書内では OpenAI などからの Anysphere 社への出資の紹介をしていますが、2024年8月22日に、Stripe、Github、Ramp、Perplexity、OpenAI の創設者などから、さらに6000万ドル（約88億円）の出資があったことが公式にアナウンスされました。心強いニュースですね。
+책에서는 OpenAI 등이 Anysphere에 투자한 내용을 소개하고 있습니다. 2024년 8월 22일에 Stripe, GitHub, Ramp, Perplexity, OpenAI 창업자 들이 6,000만 달러에 달하는 금액을 투자한 사실이 공개되었습니다.
+
 - [We Raised $60M](https://www.cursor.com/blog/series-a)
 
-## 📗 Cursorの料金体系（P3）
+## 📗 Cursor 요금 체계
 
-- 「高速 GTP-4」という呼び方から「高速プレミアムモデル」に変更になっています。
-- 「高速プレミアムモデル」には下記モデルが含まれます。
-    1. gpt-4
-    2. gpt-4o
-    3. claude-3.5-sonnet
-    4. claude-3-5-sonnet-20241022
-    5. claude-3.5-haiku
-- claude-3.5-haiku は1回のプレミアムリクエストの1/3としてカウントされます。
-- Pro/Business プランに含まれていない上限回数、追加料金のあるモデルは、次の表のようになっています（2024/10/17時点）
-![](../images/Pricing_Details_table.png)
-- GPT-4o mini は料金体系上 cursor-small と同じ扱い（Pro 以上は回数制限なし）になっています（コストパフォーマンスが良いので、活用の価値が高い）。
+- 「고속 GTP-4」라는 이름에서 「고속 프리미엄 모델」로 변경되었습니다.
+- 「고속 프리미엄 모델」에는 다음 모델들이 포함됩니다.
+  1. gpt-4
+  2. gpt-4o
+  3. claude-3.5-sonnet
+  4. claude-3-5-sonnet-20241022
+  5. claude-3.5-haiku
+- claude-3.5-haiku는 1번의 프리미엄 요청의 1/3으로 카운트됩니다.
+- Pro/Business 플랜에 포함되지 않은 상한 횟수, 추가 요금이 있는 모델은 다음 표와 같이 정리되어 있습니다(2024/10/17 시점).  
+  ![상세 보기](../images/Pricing_Details_table.png)
+- GPT-4o mini는 요금 체계상 cursor-small과 같이 취급됩니다(Pro 이상은 횟수 제한이 없음). 성능 대비 가격이 좋으므로 활용 가치가 높습니다.
